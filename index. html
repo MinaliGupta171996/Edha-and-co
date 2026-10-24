@@ -1,0 +1,171 @@
+
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta name="theme-color" content="#2b1712">
+  <title>Edha & Co. | Artisan Chocolate</title>
+  <meta name="description" content="Discover handcrafted chocolate bars by Edha & Co. Made for your sweetest moments.">
+  <style>
+    * { box-sizing: border-box; margin: 0; padding: 0; }
+    html { scroll-behavior: smooth; }
+    body {
+      font-family: Georgia, 'Times New Roman', serif;
+      background: #fffaf3;
+      color: #321d17;
+      line-height: 1.6;
+    }
+    header {
+      background: #2b1712;
+      color: #f4dfb1;
+      padding: 18px 6%;
+      display: flex;
+      align-items: center;
+      justify-content: space-between;
+      gap: 16px;
+      flex-wrap: wrap;
+    }
+    .brand { font-size: 27px; letter-spacing: 2px; }
+    .brand span { color: #d8b56d; }
+    nav { display: flex; gap: 18px; flex-wrap: wrap; }
+    nav a { color: #fff3dc; text-decoration: none; font-size: 14px; }
+    .hero {
+      background: linear-gradient(120deg, #321b14, #65402b);
+      color: #fff6e7;
+      padding: 75px 7%;
+      text-align: center;
+    }
+    .eyebrow {
+      color: #e7c783;
+      text-transform: uppercase;
+      letter-spacing: 3px;
+      font-size: 12px;
+    }
+    h1 { font-size: clamp(38px, 7vw, 68px); line-height: 1.15; margin: 18px 0; }
+    .hero p { max-width: 520px; margin: 0 auto 28px; color: #f2dfc8; }
+    .button {
+      display: inline-block;
+      background: #d8b56d;
+      color: #2b1712;
+      text-decoration: none;
+      padding: 13px 24px;
+      border-radius: 2px;
+      font-weight: bold;
+    }
+    section { padding: 55px 7%; }
+    .section-title { text-align: center; font-size: 32px; margin-bottom: 10px; }
+    .section-intro { text-align: center; color: #806b5e; margin-bottom: 32px; }
+    .products {
+      display: grid;
+      grid-template-columns: repeat(auto-fit, minmax(220px, 1fr));
+      gap: 22px;
+    }
+    .product {
+      background: #fff;
+      border: 1px solid #eadcc8;
+      padding: 16px;
+      text-align: center;
+    }
+    .product-art {
+      min-height: 180px;
+      display: grid;
+      place-items: center;
+      background: #efe2d0;
+      font-size: 72px;
+      margin-bottom: 17px;
+    }
+    .product h3 { font-size: 22px; margin-bottom: 5px; }
+    .product p { color: #806b5e; font-size: 14px; margin-bottom: 12px; }
+    .price { color: #8b6428; font-weight: bold; margin-bottom: 16px; }
+    .small-button {
+      display: inline-block;
+      padding: 9px 16px;
+      border: 1px solid #6a4328;
+      color: #6a4328;
+      text-decoration: none;
+    }
+    .story { background: #f1e6d6; text-align: center; }
+    .story p { max-width: 650px; margin: 15px auto 0; }
+    .contact { text-align: center; }
+    footer {
+      background: #2b1712;
+      color: #f4dfb1;
+      text-align: center;
+      padding: 25px 15px;
+      font-size: 13px;
+    }
+    @media (max-width: 500px) {
+      header { justify-content: center; text-align: center; }
+      nav { justify-content: center; }
+      .hero { padding: 55px 6%; }
+      section { padding: 42px 6%; }
+    }
+  </style>
+</head>
+<body>
+  <header>
+    <div class="brand">Edha <span>&amp; Co.</span></div>
+    <nav>
+      <a href="#home">Home</a>
+      <a href="#chocolates">Chocolates</a>
+      <a href="#story">Our Story</a>
+      <a href="#contact">Contact</a>
+    </nav>
+  </header>
+
+  <main>
+    <section class="hero" id="home">
+      <div class="eyebrow">A little luxury in every bite</div>
+      <h1>Made with Love.<br>Wrapped in Chocolate.</h1>
+      <p>Discover thoughtfully crafted chocolate bars from Edha &amp; Co. — made to make your sweetest moments even more special.</p>
+      <a class="button" href="#chocolates">Explore Our Chocolates</a>
+    </section>
+
+    <section id="chocolates">
+      <h2 class="section-title">Our Chocolate Collection</h2>
+      <p class="section-intro">Small-batch indulgence, made for chocolate lovers.</p>
+      <div class="products">
+        <article class="product">
+          <div class="product-art">🍫</div>
+          <h3>Classic Dark</h3>
+          <p>Rich, deep chocolate goodness.</p>
+          <div class="price">Price coming soon</div>
+          <a class="small-button" href="#contact">Enquire Now</a>
+        </article>
+        <article class="product">
+          <div class="product-art">🌰</div>
+          <h3>Almond Delight</h3>
+          <p>Smooth chocolate with crunchy almonds.</p>
+          <div class="price">Price coming soon</div>
+          <a class="small-button" href="#contact">Enquire Now</a>
+        </article>
+        <article class="product">
+          <div class="product-art">🤎</div>
+          <h3>Signature Bar</h3>
+          <p>A special treat for your everyday moments.</p>
+          <div class="price">Price coming soon</div>
+          <a class="small-button" href="#contact">Enquire Now</a>
+        </article>
+      </div>
+    </section>
+
+    <section class="story" id="story">
+      <h2 class="section-title">The Story Behind Every Bite</h2>
+      <p>At Edha &amp; Co., we believe chocolate is more than a treat. It's a little moment of happiness, thoughtfully made and beautifully shared.</p>
+    </section>
+
+    <section class="contact" id="contact">
+      <h2 class="section-title">Let's Make Your Day Sweeter</h2>
+      <p class="section-intro">Have a question or want to place an order? We'd love to hear from you.</p>
+      <a class="button" href="https://wa.me/" target="_blank" rel="noopener">Order on WhatsApp</a>
+      <p style="font-size:12px; margin-top:12px;">WhatsApp ordering link will be personalised in a later step.</p>
+    </section>
+  </main>
+
+  <footer>
+    <p>Edha &amp; Co. · Crafted for your sweetest moments.</p>
+    <p>© 2026 Edha &amp; Co.</p>
+  </footer>
+</body>
+</html>
